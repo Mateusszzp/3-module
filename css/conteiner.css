@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+
+    max-width: 700px;
+    padding: 50px 100px;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    color: rgb(246, 246, 246);
+    background-color: #a8abaa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+}

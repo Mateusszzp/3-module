@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/conteiner.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>Kalkulator walut</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Kalkulator walut
+                </legend>
+
+                <lebel>
+                    <p>
+                </lebel><span class="form__lebelText"> Wpisz zł*(pole wymagane) </span><input required
+                    class="js-field formField" type="number" name="zl" min="1" step="any">
+                </p>
+                <lebel>
+                    <span class="form__lebelText"> Aktualny kurs </span><input class="js-currency formCurrency"
+                        type="number" name="Euro" step="any" readonly value="4.78">
+                </lebel>
+                <p> Wartość w Euro: <strong class="js-result formResult">N/A</strong></p>
+
+            </fieldset>
+            <p>
+                <button class="form__button">Przelicz</button>
+            </p>
+        </form>
+    </div>
+    <footer class="footer">Wykonano w ramach zadania YouCode@ Mateusz Paśko</footer>
+</body>
+
+</html>
