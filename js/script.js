@@ -30,7 +30,6 @@ formElement.addEventListener("submit", (event) => {
 }
 resultElement.innerText = result.toFixed(2)
 
-    console.log(result);
     
 });
 
