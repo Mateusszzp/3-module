@@ -25,12 +25,17 @@
 
                 <lebel>
                     <p>
-                </lebel><span class="form__lebelText"> Wpisz zł*(pole wymagane) </span><input required
+                </lebel><span class="form__lebelText"> Wpisz zł* </span><input required
                     class="js-field formField" type="number" name="zl" min="1" step="any">
                 </p>
                 <lebel>
                     <span class="form__lebelText"> Aktualny kurs Euro</span><input class="js-currency formCurrency"
-                        type="number" name="Euro" step="any" readonly value="4.78">
+                        name=" currency" list="currency">
+                        <dataList id="currency">
+                            <option value="EUR">Euro</option>
+                            <option value="USD">Dolar</option>
+                            <option value="GBP">Funt</option>
+                        </dataList>
                 </lebel>
                 <p> Wartość w Euro: <strong class="js-result formResult">N/A</strong></p>
 

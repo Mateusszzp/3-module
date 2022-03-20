@@ -8,13 +8,29 @@ let formElement = document.querySelector(".js-form");
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let field = fieldElement.value;
-    let currency = currencyElement.value;
+    let Euro = 4.6940;
+    let Dolar = 4.2375;
+    let Funt = 5.5831;
 
-    let result = field / currency;
+    let field = fieldElement.value
+    let currency = currencyElement.value
 
-    resultElement.innerText = result.toFixed(2)
+    let result
+
+    switch (currency) {
+        case "EUR":
+            result = field / Euro;
+            break;
+        case "USD":
+            result = field / Dolar;
+            break;
+        case "GBP":
+            result = field / Funt;
+            break;
+}
+resultElement.innerText = result.toFixed(2)
 
     console.log(result);
+    
 });
 
