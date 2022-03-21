@@ -27,9 +27,9 @@ formElement.addEventListener("submit", (event) => {
         case "GBP":
             result = field / Funt;
             break;
-}
-resultElement.innerText = result.toFixed(2)
+    }
+    resultElement.innerText = result.toFixed(2)
 
-    
+
 });
 

@@ -22,22 +22,27 @@
                 <legend class="form__legend">
                     Kalkulator walut
                 </legend>
-
-                <lebel>
-                    <p>
-                </lebel><span class="form__lebelText"> Wpisz zł* </span><input required
-                    class="js-field formField" type="number" name="zl" min="1" step="any">
+                <p>
+                    <label>
+                    </label><span class="form__lebelText"> Wpisz zł* </span><input required class="js-field formField"
+                        type="number" name="zl" min="1" step="any">
                 </p>
-                <lebel>
-                    <span class="form__lebelText"> Wybierz walute</span><input class="js-currency formCurrency"
+                <label>
+                    <span class="form__lebelText"> Wybierz walute</span><select class="js-currency formCurrency"
                         name=" currency" list="currency">
                         <dataList id="currency">
                             <option value="EUR">Euro</option>
                             <option value="USD">Dolar</option>
                             <option value="GBP">Funt</option>
-                        </dataList>
-                </lebel>
+                        </dataList></select>
+                </label>
                 <p> Wartość: <strong class="js-result formResult">N/A</strong></p>
+                <p><span calss="form__exchangeRate">Aktualne kursy walut:</span></p>
+                <p>Euro 4.6940</p>
+                <p>Dolar 4.2375</p>
+                <p>Funt 5.5831</p>
+
+                </p>
 
             </fieldset>
             <p>
