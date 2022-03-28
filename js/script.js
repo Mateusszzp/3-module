@@ -1,35 +1,52 @@
-console.log("witam wszystkich developerów");
-let fieldElement = document.querySelector(".js-field");
-let currencyElement = document.querySelector(".js-currency");
-let resultElement = document.querySelector(".js-result");
-let formElement = document.querySelector(".js-form");
-
-
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let Euro = 4.6940;
-    let Dolar = 4.2375;
-    let Funt = 5.5831;
-
-    let field = fieldElement.value
-    let currency = currencyElement.value
-
-    let result
-
-    switch (currency) {
-        case "EUR":
-            result = field / Euro;
-            break;
-        case "USD":
-            result = field / Dolar;
-            break;
-        case "GBP":
-            result = field / Funt;
-            break;
+{
+    function welcome() {
+        console.log("Witam wszystkich developerów");
     }
-    resultElement.innerText = result.toFixed(2)
-
-
-});
-
+    welcome();
+ 
+    const ShowTheResult = (field, currency) => {
+        const Euro = 4.6940;
+        const Dolar = 4.2375;
+        const Funt = 5.5831;
+ 
+        switch (currency) {
+            case "EUR":
+                return field / Euro;
+ 
+            case "USD":
+                return field / Dolar;
+ 
+            case "GBP":
+                return field / Funt;
+        }
+    };
+ 
+    const updateResultText = (field, currency, result) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = `${field.toFixed(2)} PLN = ${result.toFixed(2)} ${currency}`
+ 
+    }
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+ 
+        const fieldElement = document.querySelector(".js-field");
+        const currencyElement = document.querySelector(".js-currency");
+ 
+ 
+ 
+        const field = +fieldElement.value
+        const currency = currencyElement.value
+ 
+        const result = ShowTheResult(field, currency)
+ 
+        updateResultText(field, currency, result)
+    };
+ 
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+ 
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+    init();
+ 
+}
