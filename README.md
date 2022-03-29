@@ -1,5 +1,5 @@
 # Currency calculator
-![page Gif] (images/calculator.gif)
+![page Gif](images/calculator.gif)
 ## Demo
  https://mateusszzp.github.io/Currency-calculator/
 
