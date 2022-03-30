@@ -39,6 +39,7 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+font-size: 23px;
 }
 
 .form__button:hover {
@@ -54,6 +55,8 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    background-color: #fbfdfc;
+    font-size: 23px;
 }
 
 .form__legend {
@@ -63,6 +66,7 @@
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
-.formResult{
+
+.formResult {
     font-size: 30px;
 }

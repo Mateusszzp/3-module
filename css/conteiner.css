@@ -9,21 +9,17 @@ html {
 body {
     font-family: 'Roboto Slab', serif;
     background-image: url("https://st2.depositphotos.com/1000128/5225/i/950/depositphotos_52250241-stock-photo-stacks-of-500-euro-banknotes.jpg");
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: bottom;
-    background-position: center;
-      
+    background-size: 200px;
+    background-attachment: fixed;
+    background-repeat:space;
 }
-
 .container {
 
     max-width: 700px;
-    padding: 50px 50px;
+    padding: 350px 50px;
     margin: 0 auto;
-
+    overflow: auto;
 }
-
 .footer {
     width: 100%;
     max-width: 100%;
@@ -34,5 +30,4 @@ body {
     border-radius: 8px;
     text-align: center;
     font-weight: 700;
-    margin: 100px 0 0 0;
 }

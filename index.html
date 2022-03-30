@@ -13,20 +13,21 @@
     <link href="css/form.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link rel="icon" href="images/icon.png">
+    <meta property="og:image" content="images/calculator.png">
     <title>Kalkulator walut</title>
 </head>
 
 <body>
     <div class="container">
-        <form class="js-form">
+        <form class="js-form  form">
             <fieldset class="form__fieldset">
                 <legend class="form__legend">
                     Kalkulator walut
                 </legend>
                 <p>
                     <label>
-                    </label><span class="form__lebelText"> Wpisz zł* </span><input required class="js-field formField"
-                        type="number" name="zl" min="1" step="any">
+                    </label><span class="form__lebelText"> Wpisz zł* </span><input required
+                        class="js-userValue formField" type="number" name="zl" min="1" step="any">
                 </p>
                 <label>
                     <span class="form__lebelText"> Wybierz walute</span><select class="js-currency formCurrency"
@@ -44,12 +45,11 @@
                 <p>Funt 5.5831</p>
 
 
-
+                <p><strong class="js-result formResult">N/a</strong></p>
             </fieldset>
             <p>
                 <button class="form__button">Przelicz</button>
             </p>
-            <p><strong class="js-result formResult">N/a</strong></p>
         </form>
     </div>
     <footer class="footer">Wykonano w ramach zadania YouCode@ Mateusz Paśko</footer>
