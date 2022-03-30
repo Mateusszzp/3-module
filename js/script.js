@@ -1,5 +1,5 @@
 {
-    function welcome() {
+    welcome = () => {
         console.log("Witam wszystkich developerów");
     };
     const ShowTheResult = (userValue, currency) => {
