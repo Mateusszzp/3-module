@@ -9,7 +9,6 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/conteiner.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
@@ -20,7 +19,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div>
         <form class="js-form  form">
             <fieldset class="form__fieldset">
                 <legend class="form__legend">
@@ -28,13 +27,15 @@
                 </legend>
                 <label>
                     <p>
-                        <span class="form__input"> Wpisz zł* </span><input required class="js-userValue formField"
+                        <span class="form__input"> Wpisz zł* </span>
+                        <input required class="js-userValue formField"
                             type="number" name="zl" min="1" step="any">
                     </p>
 
 
                     <p>
-                        <span class="form__input"> Wybierz walute</span><select class="js-currency formCurrency"
+                        <span class="form__input"> Wybierz walute</span>
+                        <select class="js-currency formCurrency"
                             name=" currency" list="currency">
                             <dataList id="currency">
                                 <option value="EUR">Euro</option>

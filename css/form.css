@@ -1,3 +1,10 @@
+.form {
+    max-width: 700px;
+    padding: 250px 50px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 .form__input {
     width: 100%;
     max-width: 150px;
@@ -57,6 +64,9 @@
     box-shadow: 6px -6px 10px -1px rgba(0, 0, 0, 0.75);
     background-color: #fbfdfc;
     font-size: 23px;
+    opacity: 0.7;
+
+
 }
 
 .form__legend {
