@@ -12,7 +12,7 @@
     border-radius: 6px;
     background-color: #d1f6ea;
     padding: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: 6px -6px 10px -1px rgba(0, 0, 0, 0.75);
 }
 
 .formField:required {
@@ -27,7 +27,7 @@
     border-radius: 6px;
     background-color: #d1f6ea;
     padding: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: 6px -6px 10px -1px rgba(0, 0, 0, 0.75);
 }
 
 .form__button {
@@ -38,8 +38,8 @@
     background-color: #22f3b1;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-font-size: 23px;
+    box-shadow: 6px -6px 10px -1px rgba(0, 0, 0, 0.75);
+    font-size: 23px;
 }
 
 .form__button:hover {
@@ -54,7 +54,7 @@ font-size: 23px;
     border: 1px solid #cccc;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: 6px -6px 10px -1px rgba(0, 0, 0, 0.75);
     background-color: #fbfdfc;
     font-size: 23px;
 }
