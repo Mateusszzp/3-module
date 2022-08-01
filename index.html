@@ -10,7 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/conteiner.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link rel="icon" href="images/icon.png">
     <meta property="og:image" content="images/calculator.png">
@@ -24,19 +26,22 @@
                 <legend class="form__legend">
                     Kalkulator walut
                 </legend>
-                <p>
-                    <label>
-                    </label><span class="form__lebelText"> Wpisz zł* </span><input required
-                        class="js-userValue formField" type="number" name="zl" min="1" step="any">
-                </p>
                 <label>
-                    <span class="form__lebelText"> Wybierz walute</span><select class="js-currency formCurrency"
-                        name=" currency" list="currency">
-                        <dataList id="currency">
-                            <option value="EUR">Euro</option>
-                            <option value="USD">Dolar</option>
-                            <option value="GBP">Funt</option>
-                        </dataList></select>
+                    <p>
+                        <span class="form__input"> Wpisz zł* </span><input required class="js-userValue formField"
+                            type="number" name="zl" min="1" step="any">
+                    </p>
+
+
+                    <p>
+                        <span class="form__input"> Wybierz walute</span><select class="js-currency formCurrency"
+                            name=" currency" list="currency">
+                            <dataList id="currency">
+                                <option value="EUR">Euro</option>
+                                <option value="USD">Dolar</option>
+                                <option value="GBP">Funt</option>
+                            </dataList></select>
+                    </p>
                 </label>
 
                 <p><span calss="form__exchangeRate">Aktualne kursy walut:</span></p>
@@ -52,7 +57,9 @@
             </p>
         </form>
     </div>
-    <footer class="footer">Wykonano w ramach zadania YouCode@ Mateusz Paśko</footer>
+    <footer class="footer">Wykonano w ramach zadania YouCode@ Mateusz Paśko
+
+    </footer>
 </body>
 
 </html>
