@@ -2,65 +2,62 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <script defer src="js/script.js"></script>
-    <link rel="icon" href="images/icon.png">
-    <meta property="og:image" content="images/calculator.png">
-    <title>Kalkulator walut</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/label.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+  <link rel="icon" href="images/icon.png">
+  <meta property="og:image" content="images/calculator.png">
+  <title>Kalkulator walut</title>
 </head>
 
 <body>
-    <div>
-        <form class="js-form  form">
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                    Kalkulator walut
-                </legend>
-                <label>
-                    <p>
-                        <span class="form__input"> Wpisz zł* </span>
-                        <input required class="js-userValue formField"
-                            type="number" name="zl" min="1" step="any">
-                    </p>
+  <main class="main">
+    <form class="js-form  form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">
+          Kalkulator walut
+        </legend>
+        <label>
+          <p>
+            <span class="label"> Wpisz zł* </span>
+            <input required class="js-userValue label__input" type="number" name="zl" min="1" step="any">
+          </p>
+          <p>
+            <span class="label"> Wybierz walute</span>
+            <select class="js-currency label__input--setCurrency" name=" currency" list="currency">
+              <dataList id="currency">
+                <option value="EUR">Euro</option>
+                <option value="USD">Dolar</option>
+                <option value="GBP">Funt</option>
+              </dataList></select>
+          </p>
+        </label>
+<div>
+  <p><span calss="form__exchangeRate">Aktualne kursy walut:</span></p>
+  <p>Euro 4.6940</p>
+  <p>Dolar 4.2375</p>
+  <p>Funt 5.5831</p>
+</div>
+        
 
 
-                    <p>
-                        <span class="form__input"> Wybierz walute</span>
-                        <select class="js-currency formCurrency"
-                            name=" currency" list="currency">
-                            <dataList id="currency">
-                                <option value="EUR">Euro</option>
-                                <option value="USD">Dolar</option>
-                                <option value="GBP">Funt</option>
-                            </dataList></select>
-                    </p>
-                </label>
-
-                <p><span calss="form__exchangeRate">Aktualne kursy walut:</span></p>
-                <p>Euro 4.6940</p>
-                <p>Dolar 4.2375</p>
-                <p>Funt 5.5831</p>
-
-
-                <p><strong class="js-result formResult">N/a</strong></p>
-            </fieldset>
-            <p>
-                <button class="form__button">Przelicz</button>
-            </p>
-        </form>
-    </div>
-    <footer class="footer">Wykonano w ramach zadania YouCode@ Mateusz Paśko
-
-    </footer>
+        <p><strong class="js-result formResult">N/a</strong></p>
+      </fieldset>
+      <p>
+        <button class="form__button">Przelicz</button>
+      </p>
+    </form>
+    <footer class="footer">Wykonano w ramach zadania YouCode@ Mateusz Paśko</footer>
+  </main>
 </body>
 
 </html>

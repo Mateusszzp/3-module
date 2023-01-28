@@ -1,7 +1,14 @@
-# Currency calculator
-![page Gif](images/calculator.gif)
-## Demo
- https://mateusszzp.github.io/Currency-calculator/
+# ***Currency calculator*** JavaScript vanilla 
 
-### Description
-Currency calculator that supports the following currencies: Euro, Dollar, Pound
+## **Technologi** 🛠
+✔ CSS BEM
+✔ JavaScript
+✔ ES6+
+## **Demo** 🛠
+ https://mateusszzp.github.io/Currency-calculator/
+## **Description** 📂
+A simple currency calculator application based on the conversion of rates built into the application. Created in pure JavaScript
+## **Usage** 🔧
+![page Gif](images/calculator.gif)
+
+
